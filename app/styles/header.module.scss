@@ -1,0 +1,73 @@
+@import './variables';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $orange;
+    color: $text;
+    height: 4.4rem;
+    z-index: 1000;
+
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 100%;
+
+        .logo_group {
+            padding: .7rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $text;
+            white-space: nowrap;
+
+
+
+            .logo {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            span {
+                font: {
+                    size: 2.2rem;
+                    weight: bold;
+                    family: $font-dancing;
+                }
+
+
+
+
+            }
+        }
+
+        nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+
+            a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 1rem;
+                color: $text;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: .125rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
