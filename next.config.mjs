@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: "export",
     basePath: "/kostold-meg",
     assetPrefix: "/kostold-meg/", 
-    output: "export",
-    reactStrictMode: true,
 };
 
 export default nextConfig;
