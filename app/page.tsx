@@ -6,7 +6,7 @@ export default function Home() {
       <div className={styles.img_container}>
         <Image
           className={styles.banner_img}
-          src="/kostold-meg/banner4.jpg"  // Kép útvonala a public mappában
+          src="/banner4.jpg"  // Kép útvonala a public mappában
           alt="Banner kép"    // Kép leírása
           width={2200}        // Kép szélessége pixelben
           height={400}        // Kép magassága pixelben
