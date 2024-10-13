@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                 <Link href='/' className={styles.logo_group}>
                     <Image
                         className={styles.logo}
-                        src="/logo.svg"  // Kép útvonala a public mappában
+                        src="/kostold-meg/logo.svg"  // Kép útvonala a public mappában
                         alt="logo"    // Kép leírása
                         width={35}        // Kép szélessége pixelben
                         height={35}
