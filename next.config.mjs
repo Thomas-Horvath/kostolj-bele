@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/kostold-meg',
+    basePath: "/kostold-meg",
     output: "export",
     reactStrictMode: true,
 };
