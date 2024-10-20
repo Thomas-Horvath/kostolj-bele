@@ -1,7 +1,7 @@
 
 const Login = () => {
     return (
-      <div>
+      <div className={`section`}>
         <h2>Bejelentkezés</h2>
         <p>Itt találhatók a legjobb receptek!</p>
       </div>

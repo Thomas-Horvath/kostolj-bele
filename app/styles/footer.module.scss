@@ -1,0 +1,31 @@
+@import './variables';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30vh;
+    width: 100%;
+    background: $text;
+    color: $white-smoke;
+    padding: 1rem 1rem .5rem 1rem;
+
+    .content_wrapper {
+        display: flex;
+        max-width: 1400px;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+
+        & div {
+            display: flex;
+            height: 200px;
+            width: 100%;
+            max-width: 350px;
+            background: #666;
+        }
+    }
+}

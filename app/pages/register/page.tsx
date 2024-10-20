@@ -1,7 +1,7 @@
 
 const Register = () => {
     return (
-      <div>
+      <div className={`section`}>
         <h2>Regisztrációk</h2>
         <p>Itt találhatók a legjobb receptek!</p>
       </div>

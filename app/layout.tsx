@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./styles/globals.scss";
 import Header from "@components/Header";
 import localFont from "next/font/local";
+import Footer from "@components/Footer";
 
 
  
@@ -34,7 +35,8 @@ export default function RootLayout({
     <html lang="hu" className={`${loraFont.variable} ${dancingFont.variable}`}>
       <body>
         <Header />
-        <main> {children}</main>
+        <main> {children} </main>
+        <Footer />
       </body>
     </html>
   );

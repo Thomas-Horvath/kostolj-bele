@@ -13,7 +13,8 @@ body {
   background: $bg;
   font-family: $font-lora, Arial, Helvetica, sans-serif;
   padding-top: 4.4rem;
-
+  overflow: hidden;
+min-width: 350px;
 }
 
 * {
@@ -25,4 +26,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a , .hamburger_icon {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.section {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
 }

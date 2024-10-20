@@ -44,13 +44,13 @@
             justify-content: center;
 
             h1 {
-                font-size: 4.5rem;
+                font-size: $step-5;
                 color: $yellow;
             }
 
             p {
                 color: $white-smoke;
-                font-size: 1.7rem;
+                font-size: $step-2;
             }
         }
     }
@@ -58,4 +58,16 @@
 
 
 
+}
+
+@media (min-width: 768px) {
+    .home {
+        .img_container {
+            .text_container {
+                h1 {
+                    font-size: $step-7;
+                }
+            }
+        }
+    }
 }

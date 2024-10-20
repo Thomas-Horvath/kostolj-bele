@@ -1,7 +1,7 @@
 
 const Recipes = () => {
     return (
-      <div>
+      <div className={`section`}>
         <h2>Receptek</h2>
         <p>Itt találhatók a legjobb receptek!</p>
         
