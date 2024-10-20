@@ -9,7 +9,7 @@
     color: $text;
     height: 4.4rem;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
     .header_wrapper {
@@ -59,13 +59,13 @@
             left: 0;
             top: 4.4rem;
             background-color: $orange;
-            border-top: 2px solid $text;
             opacity: 0;
             visibility: hidden;
 
             &.open {
+                border-top: 2px solid $text;
                 max-height: 300px; //* hoozáadjuk a magasságot
-                transition: max-height 0.8s ease, opacity .3s ease;
+                transition: max-height 0.8s ease;
                 visibility: visible;
                 opacity: 1;
             }
@@ -107,7 +107,7 @@
                     width: 3rem;
                     height: 3rem;
                 }
-    
+
                 span {
                     font: {
                         size: 2.2rem;
@@ -132,6 +132,7 @@
                 a {
                     border: none;
                     height: 100%;
+
                     &:hover {
                         background-color: darken($orange, 10%);
                     }
