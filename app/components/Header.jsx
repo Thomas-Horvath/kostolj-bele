@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '@styles/header.module.scss';
+import styles from '../styles/header.module.scss';
 import Image from 'next/image';
 import { RiMenu5Line } from "react-icons/ri";
 import { IoCloseCircleOutline } from "react-icons/io5";
 // import { headers } from 'next/headers';
 
-const Header: React.FC = () => {
+const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
 

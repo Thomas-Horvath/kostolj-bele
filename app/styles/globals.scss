@@ -14,7 +14,7 @@ body {
   font-family: $font-lora, Arial, Helvetica, sans-serif;
   padding-top: 4.4rem;
   overflow: hidden;
-min-width: 350px;
+  min-width: 350px;
 }
 
 * {
@@ -28,7 +28,8 @@ a {
   text-decoration: none;
 }
 
-a , .hamburger_icon {
+a,
+.hamburger_icon {
   -webkit-tap-highlight-color: transparent;
 }
 

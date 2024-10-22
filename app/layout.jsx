@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+
 import "./styles/globals.scss";
-import Header from "@components/Header";
+import Header from "./components/Header";
 import localFont from "next/font/local";
-import Footer from "@components/Footer";
+import Footer from "./components/Footer";
 
 
- 
+
 const dancingFont = localFont({
   src: "./fonts/DancingScript-VariableFont_wght.ttf",
   variable: "--font-dancing",
@@ -18,21 +18,17 @@ const loraFont = localFont({
 });
 
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Kóstolj Bele!",
   description: "Receptgyűjtő alkalmazás",
   keywords: ['Next.js', 'React', 'JavaScript'],
-  authors: [{ name: 'Thomas Horvath'}], 
+  authors: [{ name: 'Thomas Horvath' }],
   icons: {
-    icon:"/favicon.svg"
+    icon: "/favicon.svg"
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="hu" className={`${loraFont.variable} ${dancingFont.variable}`}>
       <body>
