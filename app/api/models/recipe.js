@@ -20,4 +20,4 @@ const RecipeSchema = new mongoose.Schema({
   ]
 });
 
-module.exports =  mongoose.models.Recipe || mongoose.model('Recipe', RecipeSchema , 'recipe' );
+module.exports =  mongoose.models.Recipe || mongoose.model('Recipe', RecipeSchema, 'recipes');
