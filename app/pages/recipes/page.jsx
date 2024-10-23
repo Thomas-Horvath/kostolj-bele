@@ -14,7 +14,7 @@ const Recipes = async () => {
       <h1>Receptek</h1>
       <div className={styles.recipesGrid}>
         {recipesJson.map((recipe) => (
-          <RecipeCard key={recipe._id} recipe={recipe} />
+          <RecipeCard key={recipe.id} recipe={recipe} />
         ))}
       </div>
     </div>

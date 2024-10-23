@@ -5,6 +5,7 @@
 @mixin btn-content($background, $color) {
     border: none;
     outline: none;
+    width: fit-content;
     padding: .4rem 1.3rem;
     border-radius: .3rem;
     box-shadow: $box-shadow ;
