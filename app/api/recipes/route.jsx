@@ -10,3 +10,4 @@ export async function GET(req, res) {
     return new Response(JSON.stringify({ message: 'Hiba történt a receptek lekérése közben' }), { status: 500 });
   }
 }
+ 
