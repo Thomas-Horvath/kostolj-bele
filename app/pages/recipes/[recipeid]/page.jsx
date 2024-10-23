@@ -7,7 +7,7 @@ const RecipeDetails = async ({ params }) => {
   return (
     <div className="section">
       <p>page {params.recipeid}</p>
-      <h2>{recipe.name || "Nincs név"}</h2>
+      <h2>{recipe.name}</h2>
       {recipe.rate}
       <ul>
         {recipe.ingredients.map(x => <li key={x._id}>{x.name} {x.quantity}</li>)}
