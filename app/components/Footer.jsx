@@ -84,7 +84,7 @@ const Footer = () => {
 
             <Image
                 className={styles.footer_left}
-                src="/footer-left.svg"
+                src="/fruite_bag.svg"
                 alt="footer étel"    // Kép leírása
                 width={150}        // Kép szélessége pixelben
                 height={150}        // Kép magassága pixelben
@@ -92,11 +92,19 @@ const Footer = () => {
 
             <Image
                 className={styles.footer_right}
-                src="/footer-right.svg"
+                src="/plate.svg"
                 alt="footer étel"    // Kép leírása
                 width={150}        // Kép szélessége pixelben
                 height={150}        // Kép magassága pixelben
             />
+
+            {/* <Image
+                className={styles.footer_pizza}
+                src="/pizza.svg"
+                alt="footer étel"    // Kép leírása
+                width={150}        // Kép szélessége pixelben
+                height={150}        // Kép magassága pixelben
+            /> */}
 
         </div>
     )

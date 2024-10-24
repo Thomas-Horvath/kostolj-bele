@@ -12,27 +12,39 @@
     color: $white-smoke;
     padding: 0 1rem;
     position: relative;
+    overflow: hidden;
 
 
     .footer_left {
         position: absolute;
         width: 300px;
         height: 300px;
-        left: -150px;
-        bottom: -100px;
+        left: -70px;
+        bottom: -40px;
         z-index: 0;
-        opacity: .7;
+        opacity: .1;
     }
 
 
     .footer_right {
         position: absolute;
-        width: 200px;
-        height: 200px;
-        right: -50px;
-        top: 0;
+        width: 300px;
+        height: 300px;
+        right: -100px;
+        top: -80px;
         z-index: 0;
+        opacity: .6;
     }
+    // .footer_pizza {
+    //     position: absolute;
+    //     width: 150px;
+    //     height: 150px;
+    //     right: 4rem;
+    //     bottom:2rem;
+    //     z-index: 0;
+    //     opacity: .2;
+    //     transform: scaleX(-1);
+    // }
 
     .content_wrapper {
         display: flex;
