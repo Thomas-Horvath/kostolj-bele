@@ -1,6 +1,5 @@
-
 @import './variables';
-@import './mixin'; 
+@import './mixin';
 
 
 
@@ -42,11 +41,30 @@ a,
   padding: 1rem;
 }
 
+li {
+  list-style: none;
+}
 
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 
 
 
 .btn-green {
-  @include btn-content($main-green, $white )
+  @include btn-content($dark-green, $white )
 }
+
+
+@media (hover: none)  {
+  .btn-green:hover{
+    background: $dark-green;
+  }
+  .btn-green:active {
+    transform: scale(1);
+  }
+
+}
+
+

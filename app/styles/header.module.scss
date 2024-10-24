@@ -89,6 +89,7 @@
         .hamburger_icon {
             font-size: 2.4rem;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
         }
     }
 
@@ -135,6 +136,7 @@
 
                     &:hover {
                         background-color: darken($orange, 10%);
+                        color: $white;
                     }
                 }
             }

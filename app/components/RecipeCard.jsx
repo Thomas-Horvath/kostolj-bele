@@ -17,7 +17,7 @@ const RecipeCard = ({ recipe }) => {
         (<div className={styles.card}>
 
             <span className={styles.heart} onClick={handleClick}>
-               {!addFavorit ? <FaRegHeart className={styles.svg}/> : <FaHeart className={`${styles.svg} ${styles.added_heart}`}/> }
+                {!addFavorit ? <FaRegHeart className={styles.svg} /> : <FaHeart className={`${styles.svg} ${styles.added_heart}`} />}
             </span>
 
             <img src={imageUrl} alt={recipe.name} className={styles.image} />
