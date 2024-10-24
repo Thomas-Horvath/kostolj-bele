@@ -97,12 +97,12 @@
 
                     h2 {
                         text-transform: uppercase;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         color: $white;
                     }
 
                     li {
-                        margin-bottom: .3rem;
+                        margin-bottom: .8rem;
                         font-weight: 600;
 
                         &:hover {
@@ -185,6 +185,8 @@
 
 
 
+
+// touch screen hover
 @media (hover: none) {
     .footer {
         .content_wrapper {
