@@ -83,7 +83,7 @@
 
             .main_title {
                 padding-bottom: 1rem;
-                font-size: 3rem;
+                font-size: $step-3;
                 position: relative;
                 border-bottom: 3px solid $border-gray ;
                 margin-bottom: 2rem;
@@ -314,10 +314,7 @@
 }
 
 
-// @media (min-width: 567px) {
-//     .home {
-//     }
-// }
+
 
 
 
@@ -361,6 +358,11 @@
 
         .content {
             padding: 4rem 1rem;
+            .main_container {
+                .main_title {
+                    font-size: $step-4;
+                }
+            }
         }
     }
 }
@@ -372,11 +374,10 @@
 
             .aside {
                 padding-top: 5.6rem;
-            }
-
-            .aside {
                 max-width: 300px;
             }
+
+           
         }
     }
 }
