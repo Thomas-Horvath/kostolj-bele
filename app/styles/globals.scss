@@ -18,6 +18,7 @@ body {
   min-width: 350px;
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -51,6 +52,14 @@ a {
 }
 
 
+
+.main {
+     background: url('/bg4.svg');
+     background-position:  top left;
+     background-size: cover;
+     background-repeat: no-repeat;
+    
+}
 
 .btn-green {
   @include btn-content($dark-green, $white )

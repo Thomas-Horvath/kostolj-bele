@@ -7,7 +7,7 @@
         width: 100%;
         height: 300px;
         position: relative;
-     
+
 
 
         .banner_img {
@@ -30,37 +30,75 @@
 
         }
 
-        .text_container {
-            z-index: 2;
-            padding: 1rem;
-            position: absolute;
-            background: $dark-green;
-         
+        .text_wrapper {
+            max-width: 1400px;
             width: 100%;
-           height: 8.9rem;
-       bottom:-8rem;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
+            height: 100%;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            z-index: 1;
 
-            h1 {
-                font-size: $step-5;
-                color: $yellow;
-            }
 
-            p {
-                margin-top: .3rem;
-                color: $white-smoke;
-                font-size: $step-2;
+            .text_container {
+                z-index: 2;
+                padding: 1rem;
+                // position: absolute;
+                background: $dark-green;
+
+                width: 100%;
+
+                height: 8.9rem;
+                // bottom: -8rem;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    font-size: $step-5;
+                    color: $yellow;
+
+                }
+
+                p {
+                    margin-top: .3rem;
+                    color: $white-smoke;
+                    font-size: $step-2;
+                }
             }
         }
     }
 
+    .content {
+        // min-height: 300vh;
+        // background: url('/bg2.svg');
+        max-width: 1400px;
+        margin: auto;
+        // background-repeat: repeat;
+        padding: 7rem 1rem;
+        display: grid;
+        // grid-template-columns:  1fr 400px;
+        grid-template-columns: 1fr;
+        gap: 2rem;
 
-.content {
-    min-height: 300vh;
-}
+        .main_container {
+            height: 1000px;
+            width: 100%;
+            background: $color-gray-60;
+        }
+
+        .aside {
+            height: 800px;
+            // max-width: 400px;
+            width: 100%;
+            background: $color-gray-60;
+            border-radius: .3rem;
+        }
+
+    }
 
 }
 
@@ -73,29 +111,59 @@
                 height: 600px;
             }
 
+            .text_wrapper {
+                top: 0;
+                padding: 5rem 0 0 4rem;
 
-            .text_container {
-                padding: 5rem;
-                max-width: 600px;
-             
-                height: 500px;
-                background-color: $dark-green-80 ;
-          
-                bottom: -3rem;
-                right: 0;
-                left: 6%;
-             
-                border-radius: .3rem;
+                .text_container {
+                    padding: 3rem;
+                    max-width: 630px;
+
+                    height: 400px;
+                    background-color: $dark-green-80 ;
+
+                    bottom: 4rem;
+                    right: 0;
+                    left: 6%;
+
+                    border-radius: .3rem;
 
 
-                h1 {
-                    font-size: $step-7;
-                }
-                p {
-                    margin-top: 1.5rem;
-                    font-size: $step-3;
+                    h1 {
+                        font-size: $step-8;
+                    }
+
+                    p {
+                        margin-top: 1.5rem;
+                        font-size: $step-4;
+
+                    }
                 }
             }
+
+        }
+    }
+}
+@media (min-width: 992px) {
+    .home {
+        .content {
+            grid-template-columns: 1fr 300px;
+        }
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .home {
+        .img_container {
+            .text_wrapper {
+                top: 0;
+                padding: 5rem 0;
+            }
+        }
+
+        .content {
+            padding: 7rem 0;
         }
     }
 }

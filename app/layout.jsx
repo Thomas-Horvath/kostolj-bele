@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="hu" className={`${loraFont.variable} ${dancingFont.variable}`}>
       <body>
         <Header />
-        <main> {children} </main>
+        <main className="main"> {children} </main>
         <Footer />
       </body>
     </html>
