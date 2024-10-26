@@ -16,6 +16,7 @@ body {
   padding-top: 4.4rem;
   overflow: hidden;
   min-width: 350px;
+  position: relative;
 }
 
 
@@ -54,27 +55,51 @@ a {
 
 
 .main {
-     background: url('/bg4.svg');
-     background-position:  top left;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-    
+  background: url('/bg4.svg');
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
+
+
+
+
 
 .btn-green {
-  @include btn-content($dark-green, $white )
+  @include btn-content($dark-green, $white );
+  -webkit-tap-highlight-color: transparent;
 }
 
+.btn-orange {
+  @include btn-content($orange, $text );
+  -webkit-tap-highlight-color: transparent;
+}
 
-@media (hover: none)  {
-  .btn-green:hover{
+.btn-green-border {
+  @include btn-content(transparent, $dark-green );
+  border: 1px solid $dark-green;
+  -webkit-tap-highlight-color: transparent;
+
+  &:active {
+    transform: none;
+  }
+
+}
+
+.no-hover {
+  .btn-green:hover {
     background: $dark-green;
   }
-  .btn-green:active {
+
+  .btn-green:active , .btn.orange:active{
     transform: scale(1);
   }
 
+  .btn-orange:hover {
+    background: $orange; 
+
+  }
+
 }
-
-

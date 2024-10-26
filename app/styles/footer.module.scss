@@ -35,17 +35,7 @@
         z-index: 0;
         opacity: .6;
     }
-    // .footer_pizza {
-    //     position: absolute;
-    //     width: 150px;
-    //     height: 150px;
-    //     right: 4rem;
-    //     bottom:2rem;
-    //     z-index: 0;
-    //     opacity: .2;
-    //     transform: scaleX(-1);
-    // }
-
+   
     .content_wrapper {
         display: flex;
         max-width: 1400px;
@@ -198,8 +188,12 @@
 
 
 
-// touch screen hover
-@media (hover: none) {
+
+
+
+
+//* touch screen no hover                                                       
+:global(.no-hover) {
     .footer {
         .content_wrapper {
             .link_group {

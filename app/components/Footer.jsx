@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
+
+
     return (
         <div className={styles.footer}>
             <div className={styles.content_wrapper}>
@@ -14,9 +16,9 @@ const Footer = () => {
                         <div className={styles.links_content_wrapper}>
                             <h2>Segítség</h2>
                             <ul>
-                                <li><Link href='/faq'>GYIK (Gyakori Kérdések)</Link></li>
-                                <li><Link href='/support'>Támogatás</Link></li>
-                                <li><Link href='/contact'>Kapcsolatfelvétel</Link></li>
+                                <li><Link href='/'>GYIK (Gyakori Kérdések)</Link></li>
+                                <li><Link href='/'>Támogatás</Link></li>
+                                <li><Link href='/'>Kapcsolatfelvétel</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -25,10 +27,10 @@ const Footer = () => {
 
                             <h2>Linkek</h2>
                             <ul>
-                                <li><Link href='/terms'>Felhasználási feltételek</Link></li>
-                                <li><Link href='/privacy'>Adatvédelmi irányelvek</Link></li>
-                                <li><Link href='/recipes'>Receptjeink</Link></li>
-                                <li><Link href='/blog'>Blog</Link></li>
+                                <li><Link href='/'>Felhasználási feltételek</Link></li>
+                                <li><Link href='/'>Adatvédelmi irányelvek</Link></li>
+                                <li><Link href='/pages/recipes'>Receptjeink</Link></li>
+                                <li><Link href='/'>Blog</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -36,10 +38,10 @@ const Footer = () => {
                         <div className={styles.links_content_wrapper}>
                             <h2>Rólunk</h2>
                             <ul>
-                                <li><Link href='/about'>Cégünkről</Link></li>
-                                <li><Link href='/team'>Csapatunk</Link></li>
-                                <li><Link href='/careers'>Karrier</Link></li>
-                                <li><Link href='/press'>Sajtó</Link></li>
+                                <li><Link href='/'>Cégünkről</Link></li>
+                                <li><Link href='/'>Csapatunk</Link></li>
+                                <li><Link href='/'>Karrier</Link></li>
+                                <li><Link href='/'>Sajtó</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -98,13 +100,7 @@ const Footer = () => {
                 height={150}        // Kép magassága pixelben
             />
 
-            {/* <Image
-                className={styles.footer_pizza}
-                src="/pizza.svg"
-                alt="footer étel"    // Kép leírása
-                width={150}        // Kép szélessége pixelben
-                height={150}        // Kép magassága pixelben
-            /> */}
+           
 
         </div>
     )

@@ -13,6 +13,7 @@ $step-8: clamp(4.8373rem, 3.9283rem + 4.5448vw, 7.4506rem);
 
 $main-green: #4CAF50;
 $dark-green: #388E3C;
+// $orange: #f9aa34;
 $orange: #FF9800;
 // $orange: #f47500 ;
 $yellow: #FFEB3B;
@@ -24,11 +25,14 @@ $text: #222;
 $font-lora: var(--font-lora);
 $font-dancing: var(--font-dancing);
 
-$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+$box-shadow: 2px 2px 4px rgba(0, 0, 0,.3);
 $main-gold: #e8aa14;
 $color-gray: #817f75;
-$color-gray-60: rgba(208, 207, 204, 0.5);
+$color-gray-60: rgba(190, 190, 190, 0.4);
 $dark-gray: #3a3a3a;
 $dark-green: #009541;
 $dark-green-80: rgba(0, 149, 65, .5);
 $tomato: tomato;
+
+
+$border-gray: #bdbbbb;

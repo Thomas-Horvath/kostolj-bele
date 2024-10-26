@@ -3,6 +3,8 @@ import "./styles/globals.scss";
 import Header from "./components/Header";
 import localFont from "next/font/local";
 import Footer from "./components/Footer";
+import NoHoverTouch from "./components/NoHoverTouch";
+import CookiesAlert from "./components/CookiesAlert";
 
 
 
@@ -29,12 +31,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="hu" className={`${loraFont.variable} ${dancingFont.variable}`}>
       <body>
+        <NoHoverTouch />
         <Header />
         <main className="main"> {children} </main>
         <Footer />
+        <CookiesAlert />
       </body>
     </html>
   );

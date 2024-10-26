@@ -1,6 +1,30 @@
+
+
 import Image from 'next/image';
 import styles from './styles/home.module.scss';
-export default function Home() {
+import Link from 'next/link';
+import RecipeCard from './components/RecipeCard';
+
+
+export default async function Home() {
+
+
+
+
+
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/recipes`, { cache: 'no-store' }); // API végpont lekérése
+  const recipes = await res.json();
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("klikk")
+  }
+
+
+
   return (
     <div className={styles.home}>
       <div className={styles.img_container}>
@@ -14,17 +38,106 @@ export default function Home() {
         <div className={styles.text_wrapper}>
           <div className={styles.text_container}>
             <h1>Receptek</h1>
-            <p>A legjobb receptek egy helyen!</p>
+            <p>Főzz, kóstolj, alkoss!</p>
           </div>
         </div>
       </div>
 
 
 
+
       <div className={styles.content}>
-        <div className={styles.main_container}></div>
-        <aside className={styles.aside}></aside>
+        <div className={styles.main_container}>
+          <h2 className={styles.main_title}>Legjobb receptek</h2>
+          <div className={styles.card_container}>
+            {recipes.slice(0, 6).map((recipe) => (
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
+        </div>
+
+
+
+        <aside className={styles.aside}>
+
+          {/* category section */}
+          <div className={styles.category_container}>
+            <h2>Kategóriák</h2>
+            <ul>
+              <li>
+                <Link href="#" className={styles.links}>Csirke</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Disznó</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Zöldség</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Desszert</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Leves</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Előétel</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Egytál étel</Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.links}>Ital</Link>
+              </li>
+            </ul>
+          </div>
+
+
+
+          {/*  Search  */}
+          <div className={styles.about_container}>
+            <h2>Keresés</h2>
+            <div className={styles.form_container}>
+              <input type="text" placeholder='Kersés...' />
+              <button className='btn-orange'>Keresés</button>
+            </div>
+
+          </div>
+
+        </aside>
+
       </div>
+
+
+      <div className={styles.subscribtion}>
+
+        <h3>Iratkozz fel hírlevelünkre!</h3>
+        <h4>
+          Legyél naprakész a legújabb receptjeinkkel, konyhai tippekkel és inspiráló ötletekkel!
+        </h4>
+
+
+        <div className={styles.form_container}>
+          <form action="" >
+            <div className={styles.input_content}>
+              <input className={styles.input} type="text" placeholder="Neved" />
+              <input className={styles.input} type="text" placeholder="E-mail címed." />
+              <button className={`${styles.subscribe_btn} btn-green-border`} >Feliratkozás!</button>
+            </div>
+
+
+            <label htmlFor="checkbox" className={styles.checkbox_container}>
+              <input className={styles.checkbox} id="checkbox" type="checkbox" />
+              <div className={styles.custom_checkbox}></div>
+              A gombra kattintva elfogadom a személyes adataim kezelését az Adatvédelmi tájékoztatóban leírtaknak megfelelően.
+            </label>
+
+          </form>
+        </div>
+
+
+      </div>
+
     </div>
   );
+
 }

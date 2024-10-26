@@ -20,7 +20,9 @@ const RecipeCard = ({ recipe }) => {
                 {!addFavorit ? <FaRegHeart className={styles.svg} /> : <FaHeart className={`${styles.svg} ${styles.added_heart}`} />}
             </span>
 
-            <img src={imageUrl} alt={recipe.name} className={styles.image} />
+            <div className={styles.img_container}>
+                <img src={imageUrl} alt={recipe.name} className={styles.image} />
+            </div>
             <div className={styles.content_container}>
                 <div className={styles.rate_container}>
                     <div className={styles.starsWrapper}>
@@ -34,7 +36,7 @@ const RecipeCard = ({ recipe }) => {
                 </div>
                 <h2 className={styles.title}>{recipe.name}</h2>
             </div>
-            <Link href={`./recipes/${recipe.id}`} className='btn-green'>Részletek</Link>
+            <Link href={`/pages/recipes/${recipe.id}`} className='btn-green'>Részletek</Link>
         </div>)
     );
 };
